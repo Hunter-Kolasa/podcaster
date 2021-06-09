@@ -6,8 +6,8 @@ import Home from './components/Home'
 
 import './App.css';
 
-function App() {
-  return (
+class App extends Component {
+  return() {
     <Router>
       <Navbar />
       <Switch>
@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
       </Switch>
     </Router>
-  );
+  };
 }
 
 export default App;
